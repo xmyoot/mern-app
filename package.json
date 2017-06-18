@@ -1,7 +1,7 @@
 {
   "name": "mern-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "a basic react project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/xmyoot/mern-app/issues"
   },
-  "homepage": "https://github.com/xmyoot/mern-app#readme"
+  "homepage": "https://github.com/xmyoot/mern-app#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "mongodb": "^2.2.28",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
 }
