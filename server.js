@@ -1,3 +1,19 @@
-import config, {nodeEnv, logStarts} from './config';
+import express from 'express';
+import config from './config';
 
-logStarts("This is a message");
+import apiRouter from './api';
+
+const server = express();
+
+server.set('view enginer', 'ejs');
+
+server.get('/', (req, res) => {
+    res.send('hello from server.get function');
+});
+
+server.use('/api', apiRouter);
+server.use(express.static('public'));
+
+server.listen(config.port, ()=>{
+    console.info('express listening on port', config.port);
+});
